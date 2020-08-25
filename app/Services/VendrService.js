@@ -4,12 +4,17 @@ class VendrService {
   constructor() {
   }
   buyDew() {
-    console.log(STORE.State.Dew.price)
+    STORE.State.Money -= 5
+    console.log("Here is a Dew, you now have $", STORE.State.Money)
   }
   buyDoritos() {
-    console.log(STORE.State.Doritos.price)
+    STORE.State.Money -= 2
+    console.log("Here is your Doritos, you now have $", STORE.State.Doritos.price)
   }
-
+  insertCoin() {
+    STORE.State.Money++
+    console.log(STORE.State.Money)
+  }
 }
 
 

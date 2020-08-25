@@ -11,8 +11,8 @@ export default class Dew {
     this.price = price
   }
 
-  get Template() {
 
+  get Template() {
     return `
     <div class="card">
       <img class="card-img-top" src="${this.img}" alt="">
