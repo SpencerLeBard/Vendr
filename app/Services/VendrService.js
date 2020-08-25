@@ -23,7 +23,6 @@ class VendrService {
   }
   insertCoin() {
     STORE.State.Money++
-    console.log(STORE.State.Money)
   }
 }
 

@@ -6,6 +6,14 @@ main{
 flex-grow: 1;
 } 
 
+.header{
+  height: 10vh;
+}
+
 img{
   max-width: 50vh;
+}
+
+.footer{
+  height: 10vh;
 }

@@ -11,19 +11,37 @@
 </head>
 
 <body>
-    <main class="container">
+    <header class="container-fluid">
+        <div>
+            <div class="row bg-primary header mb-5">
+                <div class="col text-center text-light">Vendr</div>
+            </div>
+        </div>
+    </header>
+    <main class="container fluid">
         <div class="row">
             <img class="col-12" src="VendrPic.png" alt="VendrPicture">
         </div>
-        <div class="row">
-            <div class="col"><button id="buyDew" onclick="app.vendrController.buyDew()">Buy Mountian Dew </button>
-                <button id="buyDoritos" onclick="app.vendrController.buyDoritos()">Buy Doritos</button> <br>
-                <button id="addMoney" onclick="app.vendrController.insertCoin()">Add Money </button><br>
+        <div class="row align-items-center">
+            <div class="col-4"><button id="buyDew" onclick="app.vendrController.buyDew()">Buy Mountian Dew </button>
             </div>
-            <h2 class="col" id="total-cash"></h2>
+            <div class=" col-4"><button id="buyDoritos" onclick="app.vendrController.buyDoritos()">Buy Doritos
+                    Locos</button>
+            </div>
+            <div class=" col-4"><button class="col-4" id="addMoney" onclick="app.vendrController.insertCoin()">Add Money
+                </button></div><br>
+        </div>
+        <h2 id="total-cash"></h2>
         </div>
         </div>
     </main>
+    <footer class="container-fluid">
+        <div>
+            <div class="row bg-primary footer mt-5">
+                <div class="col text-center text-light">Vendr</div>
+            </div>
+        </div>
+    </footer>
     <script src="app/main.js" type="module"></script>
 </body>
 

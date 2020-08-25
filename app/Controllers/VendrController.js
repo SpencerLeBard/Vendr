@@ -20,12 +20,10 @@ export default class VendrController {
   }
 
   buyDoritos() {
-    console.log("Bought Doritos");
     VendrService.buyDoritos()
     drawMoney()
   }
   buyDew() {
-    console.log("Bought Mountian Dew");
     VendrService.buyDew()
     drawMoney()
   }
