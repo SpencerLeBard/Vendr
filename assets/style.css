@@ -1,1 +1,11 @@
-/* Styles */
+body { 
+min-height: 100vh;
+display: flex; 
+flex-direction: column; }
+main{
+flex-grow: 1;
+} 
+
+img{
+  max-width: 50vh;
+}

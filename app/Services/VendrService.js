@@ -4,12 +4,22 @@ class VendrService {
   constructor() {
   }
   buyDew() {
-    STORE.State.Money -= 5
-    console.log("Here is a Dew, you now have $", STORE.State.Money)
+    if (STORE.State.Money >= 5) {
+      STORE.State.Money -= 5
+      console.log("Here is a Dew, you now have $", STORE.State.Money)
+    } else {
+      console.log("you dont have enough cash bro");
+    }
+
   }
   buyDoritos() {
-    STORE.State.Money -= 2
-    console.log("Here is your Doritos, you now have $", STORE.State.Doritos.price)
+    if (STORE.State.Money >= 2) {
+      STORE.State.Money -= 2
+      console.log("Here is your Doritos, you now have $", STORE.State.Doritos.price)
+    } else {
+      console.log("you dont have enough cash bro");
+
+    }
   }
   insertCoin() {
     STORE.State.Money++

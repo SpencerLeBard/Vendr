@@ -11,14 +11,19 @@
 </head>
 
 <body>
-
-    <h1> Vendr</h1>
-
-    <button id="buyDew" onclick="app.vendrController.buyDew()">Buy Mountian Dew </button>
-    <button id="buyDoritos" onclick="app.vendrController.buyDoritos()">Buy Doritos</button> <br>
-    <button id="addMoney" onclick="app.vendrController.insertCoin()">Add Money </button><br>
-    <h2 id="total-cash"></h2>
-
+    <main class="container">
+        <div class="row">
+            <img class="col-12" src="VendrPic.png" alt="VendrPicture">
+        </div>
+        <div class="row">
+            <div class="col"><button id="buyDew" onclick="app.vendrController.buyDew()">Buy Mountian Dew </button>
+                <button id="buyDoritos" onclick="app.vendrController.buyDoritos()">Buy Doritos</button> <br>
+                <button id="addMoney" onclick="app.vendrController.insertCoin()">Add Money </button><br>
+            </div>
+            <h2 class="col" id="total-cash"></h2>
+        </div>
+        </div>
+    </main>
     <script src="app/main.js" type="module"></script>
 </body>
 
