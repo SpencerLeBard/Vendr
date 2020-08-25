@@ -3,8 +3,11 @@ import STORE from "../store.js";
 class VendrService {
   constructor() {
   }
-  pet() {
-
+  buyDew() {
+    console.log(STORE.State.Dew.price)
+  }
+  buyDoritos() {
+    console.log(STORE.State.Doritos.price)
   }
 
 }

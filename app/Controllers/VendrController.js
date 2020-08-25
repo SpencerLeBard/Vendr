@@ -5,7 +5,7 @@ import STORE from "../store.js";
 
 // PRIVATE
 
-
+//innerhtml 
 
 
 
@@ -15,7 +15,15 @@ export default class VendrController {
 
   }
 
-  buy() {
-    console.log("buy");
+  buyDoritos() {
+    console.log("Bought Doritos");
+    VendrService.buyDoritos()
+  }
+  buyDew() {
+    console.log("Bought Mountian Dew");
+    VendrService.buyDew()
+  }
+  insertCoin() {
+
   }
 }

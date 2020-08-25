@@ -3,7 +3,9 @@ import Doritos from "./Models/Doritos.js";
 
 let _state = {
 
-  Dew: new Dew('Mountian Dew', "png", 5)
+  Dew: new Dew('Mountian Dew', "img", 5),
+  Doritos: new Doritos("Doritos", "img", 2),
+  Money: 0
 };
 
 class Store {
